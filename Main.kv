@@ -1,0 +1,87 @@
+MDScreen:
+    name: "main"
+    bot_name: bot_name
+    MDFloatLayout:
+        md_bg_color: 1, 1, 1, 1
+        Image:
+            source: "chatbots.jpg"
+            size_hint: .8, .5
+            pos_hint: {"center_x": .5, "center_y": .8}
+        MDLabel:
+            text: "Hello Sir!"
+            font_name: "BPoppins"
+            font_size: "35sp"
+            pos_hint: {"center_x": .5, "center_y": .58}
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: 53/255, 56/255, 60/255, 1
+        MDLabel:
+            text: "Your Digital Assistant to guide you through our Products & Services. 24x7 Available!"
+            size_hint_x: .9
+            font_name: "Poppins"
+            font_size: "18sp"
+            pos_hint: {"center_x": .5, "center_y": .45}
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: 53/255, 56/255, 60/255, 1
+        MDLabel:
+            text: "Read Me First"
+            font_name: "Poppins"
+            font_size: "18sp"
+            pos_hint: {"center_x": .5, "center_y": .33}
+            halign: "center"
+            underline: "True"
+            theme_text_color: "Custom"
+            text_color: 1, 170/255, 23/255, 1
+        MDFloatLayout:
+            size_hint: .85, .08
+            pos_hint: {"center_x": .5, "center_y": .22}
+            canvas:
+                Color:
+                    rgb: (238/255, 238/255, 238/255, 1)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [22, 22, 22, 22]
+            TextInput:
+                id: bot_name
+                hint_text: "Chatbot Name"
+                size_hint: 1, None
+                pos_hint: {"center_x": .5, "center_y": .5}
+                font_size: "18sp"
+                height: self.minimum_height
+                multiline: False
+                cursor_color: 1, 170/255, 23/255, 1
+                cursor_width: "2sp"
+                foreground_color: 1, 170/255, 23/255, 1
+                background_color: 0,0,0,0
+                padding: 15
+                font_name: "Poppins"
+        MDFloatLayout:
+            size_hint: .45, .08
+            pos_hint: {"center_x": .5, "center_y": .1}
+            canvas:
+                Color:
+                    rgb: (1, 170/255, 23/255, 1)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [22, 22, 22, 22]
+        Button:
+            text: ""
+            size_hint: .45, .08
+            pos_hint: {"center_x": .5, "center_y": .1}
+            background_color: 0,0,0,0
+            on_release:
+                app.bot_name()
+        MDLabel:
+            text: "LET'S CHAT"
+            halign: "center"
+            pos_hint: {"center_y": .1}
+            font_name: "BPoppins"
+            font_size: "18sp"
+            color: 1, 1, 1, 1
+
+
+
+
