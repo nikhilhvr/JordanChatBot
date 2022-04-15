@@ -1,3 +1,4 @@
+from tkinter import N
 from kivy.clock import Clock
 from kivymd.app import MDApp
 from kivy.lang import Builder
@@ -31,7 +32,7 @@ class ResponseImage(Image):
     source = StringProperty()
 
 
-class ChatBot(MDApp):
+class JordanChatBot(MDApp):
 
     def change_screen(self, name):
         screen_manager.current = name
@@ -45,24 +46,44 @@ class ChatBot(MDApp):
 
     def bot_name(self):
         if screen_manager.get_screen('main').bot_name.text != "":
-            screen_manager.get_screen('chats').bot_name.text = screen_manager.get_screen('main').bot_name.text
+            screen_manager.get_screen(
+                'chats').bot_name.text = screen_manager.get_screen('main').bot_name.text
             screen_manager.current = "chats"
 
     def response(self, *args):
-        response = ""
-        if value == "Hello" or value == "hello":
-            response = f"Hello. I Am Your Personal Assistant {screen_manager.get_screen('chats').bot_name.text}."
+        print("Hello. I Am Your Personal Assistant JordanBot. Let's start this convo with hey/Hello")
+        if value == "Hello" or value == "hello" or value == "hey" or value == "Hey":
+            # {screen_manager.get_screen('chats').bot_name.text}
+            response = f"Hello {screen_manager.get_screen('chats').bot_name.text}. Wassssup!."
+
         elif value == "How are you?" or value == "how are you?":
-            response = "I'm doing well. Thanks!"
-        elif value == "Kapil" or value == "how are you?":
-            response = "F**k U"
+            response = "I'm doing well. Thanks!"/N // "What about you"
+
+        # elif value == "Kapil" or value == "kapil":
+        #     response = "F**k U"
+
+        elif value == "Kapil" or value == "kapil" or value == "KAPIL":
+            response = "F**k U Bitch!!  What are You Looking at"
+
+        elif value == "purushottam" or value == "Purushottam":
+            response = "Bhaiii Book chahiye !!"
+
+        elif value == "Mardav" or value == "mardav":
+            response = "Haaaan Vaiiii Savage !!"
+
+        elif value == "Aman" or value == "aman" or value == "AMAN":
+            response = "Cutieeee ho Kyaaa !!"
+
         elif value == "Images":
-            screen_manager.get_screen('chats').chat_list.add_widget(ResponseImage(source="chatbots.jpg"))
+            screen_manager.get_screen('chats').chat_list.add_widget(
+                ResponseImage(source="chatbots.jpg"))
         elif value == "Images1":
-            screen_manager.get_screen('chats').chat_list.add_widget(ResponseImage(source="1.png"))
+            screen_manager.get_screen('chats').chat_list.add_widget(
+                ResponseImage(source="1.png"))
         else:
             response = "Sorry could you say that again?"
-        screen_manager.get_screen('chats').chat_list.add_widget(Response(text=response, size_hint_x=.75))
+        screen_manager.get_screen('chats').chat_list.add_widget(
+            Response(text=response, size_hint_x=.75))
 
     def send(self):
         global size, halign, value
@@ -93,6 +114,8 @@ class ChatBot(MDApp):
 
 
 if __name__ == '__main__':
-    LabelBase.register(name="Poppins", fn_regular="D:\Kivy\Chat Bot\poppins\Poppins-ExtraLight.ttf")
-    LabelBase.register(name="BPoppins", fn_regular="D:\Kivy\Chat Bot\poppins\Poppins-Black.ttf")
-    ChatBot().run()
+    LabelBase.register(
+        name="Poppins", fn_regular="E:\Programming\JordanChatBot\Poppins\Poppins-ExtraBold.ttf")
+    LabelBase.register(
+        name="BPoppins", fn_regular="E:\Programming\JordanChatBot\Poppins\Poppins-ExtraBold.ttf")
+    JordanChatBot().run()
