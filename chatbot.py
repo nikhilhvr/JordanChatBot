@@ -54,8 +54,7 @@ class ChatBot(MDApp):
             response = f"Hello. I Am Your Personal Assistant {screen_manager.get_screen('chats').bot_name.text}."
         elif value == "How are you?" or value == "how are you?":
             response = "I'm doing well. Thanks!"
-        elif value == "Kapil" or value == "how are you?":
-            response = "F**k U"
+
         elif value == "Images":
             screen_manager.get_screen('chats').chat_list.add_widget(ResponseImage(source="chatbots.jpg"))
         elif value == "Images1":
