@@ -57,11 +57,19 @@ class JordanChatBot(MDApp):
             response = f"Hello {screen_manager.get_screen('chats').bot_name.text}. Wassssup!."
 
         elif value == "How are you?" or value == "how are you?":
-<<<<<<< HEAD
             response = "I'm doing well. Thanks!"/N // "What about you"
 
-        # elif value == "Kapil" or value == "kapil":
-        #     response = "F**k U"
+        elif value == "Abhishek" or value == "abhishek":
+            response = "Tha Man The Myth. He is the Execptional one."
+
+        elif value == "Nikhil" or value == "nikhil":
+            response = "Silently Dangerous you are! nobody should bother you in my opinion sir"
+
+        elif value == "Sudha" or value == "sudha":
+            response = "Miss Silent-Smart"
+
+        elif value == "Abhishek" or value == "abhishek":
+            response = "Tha Man The Myth"
 
         elif value == "Kapil" or value == "kapil" or value == "KAPIL":
             response = "F**k U Bitch!!  What are You Looking at"
@@ -74,9 +82,6 @@ class JordanChatBot(MDApp):
 
         elif value == "Aman" or value == "aman" or value == "AMAN":
             response = "Cutieeee ho Kyaaa !!"
-=======
-            response = "I'm doing well. Thanks!"
->>>>>>> 17eb34be22d2e943f24607a0937efac3f5ec1074
 
         elif value == "Images":
             screen_manager.get_screen('chats').chat_list.add_widget(
