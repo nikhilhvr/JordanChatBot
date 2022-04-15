@@ -37,11 +37,35 @@
             size: self.width, self.height
             pos: self.pos
             radius: [23, 23, 23, 0]
+
+# MDScreen2:
+#     # bot_name: bot_name
+#     # text_input: text_input
+#     # chat_list: chat_list
+#     # name: "chats"
+#     text: "Jordan Bot"
+#     MDFloatLayout:
+#         MDFloatLayout:
+#             md_bg_color: 1, 1, 1, 1
+#             size_hint_y: .11
+#             pos_hint: {"center_y": .95}
+#             MDLabel:
+#                 id: bot_name
+#                 text: "Jordan Bot"
+#                 pos_hint: {"center_y": .5}
+#                 halign: "center"
+#                 font_name: "BPoppins"
+#                 font_size: "25sp"
+#                 theme_text_color: "Custom"
+#                 text_color: 1, 1, 1, 1
+
+
 MDScreen:
     bot_name: bot_name
     text_input: text_input
     chat_list: chat_list
     name: "chats"
+    text: "Jordan Bot"
     MDFloatLayout:
         MDFloatLayout:
             md_bg_color: 245/255, 245/255, 245/255, 1
@@ -49,13 +73,14 @@ MDScreen:
             pos_hint: {"center_y": .95}
             MDLabel:
                 id: bot_name
-                text: ""
+                text: "Jordan Bot"
                 pos_hint: {"center_y": .5}
                 halign: "center"
                 font_name: "BPoppins"
                 font_size: "25sp"
                 theme_text_color: "Custom"
-                text_color: 53/255, 56/255, 60/255, 1
+                text_color: 245/255, 245/255, 245/255, 1
+
         ScrollView:
             size_hint_y: .77
             pos_hint: {"x": 0, "y": .116}
@@ -105,3 +130,16 @@ MDScreen:
                 text_color: 1, 1, 1, 1
                 md_bg_color: 1, 170/255, 23/255, 1
                 on_release: app.send()
+
+
+            # MDFloatLayout:
+            #     md_bg_color:1, 1, 1, 1
+            #     Image:
+            #         source:"Location.png"
+            #         size_hint: .1, .1
+            #         pos_hint:{"center_x":.5,"center_y":.95}
+            #     MDLabel:
+            #         text:"Delhi,IN"
+            #         pos_hint:{"center_x":.5,"center_y":.89}
+            #         halign: "center"
+            #         font_size:"20sp"      
