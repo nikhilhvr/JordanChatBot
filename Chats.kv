@@ -65,7 +65,6 @@ MDScreen:
     text_input: text_input
     chat_list: chat_list
     name: "chats"
-    text: "Jordan Bot"
     MDFloatLayout:
         MDFloatLayout:
             md_bg_color: 245/255, 245/255, 245/255, 1
@@ -73,13 +72,29 @@ MDScreen:
             pos_hint: {"center_y": .95}
             MDLabel:
                 id: bot_name
-                text: "Jordan Bot"
+                text: ""
                 pos_hint: {"center_y": .5}
                 halign: "center"
                 font_name: "BPoppins"
                 font_size: "25sp"
                 theme_text_color: "Custom"
                 text_color: 245/255, 245/255, 245/255, 1
+            MDLabel:
+                text:"Jordan ChatBot"
+                halign: "center"
+                font_name: "BPoppins"
+                pos_hint:{"center_y": .5}
+                font_size:"25sp"
+                text_color: 53/255, 56/255, 60/255, 1
+
+            # subText:
+            #     text:"Hello. I Am Your Personal Assistant JordanBot. Let's start this convo with hey/Hello"
+
+            #     halign: "left"
+            #     font_name: "BPoppins"
+            #     pos_hint:{"center_y": .5}
+            #     font_size:"15sp"
+            #     text_color: 53/255, 56/255, 60/255, 1
 
         ScrollView:
             size_hint_y: .77
