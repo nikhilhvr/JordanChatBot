@@ -56,14 +56,23 @@ class JordanChatBot(MDApp):
     def response(self, *args):
         if value == "Hello" or value == "hello" or value == "hey" or value == "Hey":
             # {screen_manager.get_screen('chats').bot_name.text}
-            response = f"Hello {screen_manager.get_screen('chats').bot_name.text}. Wassssup!."
+            response = f"Hello {screen_manager.get_screen('chats').bot_name.text} Wassssup!. \n  Type 'chat' for few features"
 
 #<<<<<<< Abhis-Jordan
         # Jordan ChatBot Interaction
         elif value == "How are you?" or value == "how are you?":
             response = "I'm doing well. Thanks! What about you"
 
-        elif value == "What's your name" or value == "who are you" or value == "kaun hai tu?":
+        # elif value >= 0 &&  value <=9 :
+        #     response = " We don't play Number game here buddy!"
+
+        elif value == "chat" or value == "Chat":
+            response = "As a prototype I have very little to give you unlike Our facebook \n \t 1.tye 'Jordan Game' \n \t 2. ask me about your or my name or your univercity \n \t 3. type 'Starex49' for a fun interaction"
+
+        elif value == "my name" or value == "My name" or value == "what is my name":
+            response = f"Your name is {screen_manager.get_screen('chats').bot_name.text} \t Am I correct?? "
+
+        elif value == "What's your name" or value == "who are you" or value == "kaun hai tu?" or value == "name":
             response = "my name is Jordan ChatBot. anything else I can do for you!"
 
         elif value == "What's your name" or value == "what's your name" or value == "what's your name?":
@@ -81,15 +90,29 @@ class JordanChatBot(MDApp):
         elif value == "what is chatbot" or value == "chatbot kya hai" or value == "chatbot":
             response = "An AI chatbot (Artificial Intelligence chatbot) is a chatbot that’s powered by artificial intelligence (AI). Unlike regular chatbots, AI chatbots are able to understand user queries through natural language processing (NLP) and can give intelligent answers to them. "
 
+        # Jordan Automate Features
+
         # Jordan Game start here -->
         elif value == "Jordan game" or value == "jordan game" or value == "JORDAN GAME":
             response = "welcome to Jordan game. You will going to on an Adventure !! \n \t Are you ready for thisss! \n \t YES/NO"
 
         elif value == "Yes" or value == "yes" or value == "YES":
-            response = "Awesome! I knew it you are Alive as the Fish in my plate!"
+            response = "Awesome! I knew it you are Alive as the Fish in my plate! \n \t I have a game WOULD YOU RATHER \n \t Wantt to play \n \t yes1/no2"
 
         elif value == "No" or value == "no" or value == "NO":
             response = "so sad! We are missing an golden oppotunity to spend time with each other.\n \t Next time though "
+
+        elif value == "yes1" or value == "Yes1":
+            response = " Here is your First - Would you rather! \n \t Would you rather have the ability to see 10 minutes into the future or 150 years into the future? \n \t \t 1. For 10min GG \n \t For 150 KK "
+
+        elif value == "GG" or value == "gg":
+            response = " Great one!"
+
+        elif value == "KK" or value == "kk":
+            response = " Great one!"
+
+        elif value == "No2" or value == "no2":
+            response = "so sad! We are missing an golden oppotunity to spend time with each other.\n \t Next time though \n \t Type 'chat' "
             # print("Are you ready for thisss!")
             # YES/NO
             # if(value=="yes"){
@@ -120,17 +143,23 @@ class JordanChatBot(MDApp):
         elif value == "Nikhil" or value == "nikhil":
             response = "Silently Dangerous you are! nobody should bother you in my opinion sir"
 
-        elif value == "Sudha" or value == "sudha":
-            response = "Miss Silent-Smart"
-
-        elif value == "Abhishek" or value == "abhishek":
-            response = "Tha Man The Myth"
+        # elif value == "Abhishek" or value == "abhishek":
+        #     response = "Tha Man The Myth"
 
         elif value == "Kapil" or value == "kapil" or value == "KAPIL":
-            response = "F**k U Bitch!!  What are You Looking at"
+            response = "People’s Dreams... Have No Ends \n \t And Only I Can Call My Dream Stupid!"
 
         elif value == "purushottam" or value == "Purushottam":
             response = "Bhaiii Book chahiye !!"
+
+        elif value == "vikas" or value == "Vikas kumar" or value == "Vvkas kumar":
+            response = "Prampra, Pratistha and Anushahshan!! \n \t Matlab Sincerity"
+
+        elif value == "amish" or value == "Amish" or value == "AMISH":
+            response = "MOVIE LEAKER !"
+
+        elif value == "Akansha" or value == "akansha" or value == "AKANSHA":
+            response = "Topper bhyii tum rhe !! \n \t Hoshiyaar balak!"
 
         elif value == "Mardav" or value == "mardav":
             response = "Haaaan Vaiiii Savage !!"
@@ -140,6 +169,9 @@ class JordanChatBot(MDApp):
 
         elif value == "Aman singh" or value == "aman singh" or value == "AMAN SINGH":
             response = "Choti bachi ho Kyaaa !!"
+
+        elif value == "Aditya ola" or value == "aditya ola" or value == "ola" or value == "OLA":
+            response = "Great great lord. we are nothing without  !!"
 
         elif value == "Aman singh" or value == "aman singh" or value == "AMAN SINGH":
             response = "Choti bachi ho Kyaaa !!"
@@ -170,6 +202,15 @@ class JordanChatBot(MDApp):
             #     response= "Next time though"
             # }
 #>>>>>>> main
+
+        elif value == "Nishikant" or value == "Nishikant" or value == "AMAN SINGH":
+            response = "Assam Rifles !!"
+
+        elif value == "Sudha" or value == "sudha":
+            response = "Miss Silent-Smart"
+
+        elif value == "Kapil49" or value == "kapil49" or value == "KAPIL49":
+            response = "F**k U Bitch!!  What are You Looking at"
 
         elif value == "Images":
             screen_manager.get_screen('chats').chat_list.add_widget(
