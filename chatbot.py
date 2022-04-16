@@ -56,6 +56,7 @@ class JordanChatBot(MDApp):
             # {screen_manager.get_screen('chats').bot_name.text}
             response = f"Hello {screen_manager.get_screen('chats').bot_name.text} Wassssup!. \n  Type 'chat' for few features"
 
+#<<<<<<< Abhis-Jordan
         # Jordan ChatBot Interaction
         elif value == "How are you?" or value == "how are you?":
             response = "I'm doing well. Thanks! What about you"
@@ -123,6 +124,16 @@ class JordanChatBot(MDApp):
         # Starex CSE Projects ahead
         elif value == "Starex49" or value == "starex49" or value == "StarEx49":
             response = "I have a Compliment for Youu! \n \t Type your name and I will give you my honest opinion"
+#=======
+        elif value == "How are you?" or value == "how are you?":
+            response = "I'm doing well. Thanks!"/N // "What about you"
+
+        elif value == "What's your name" or value == "what's your name" or value == "what's your name?":
+            response = "my name is Jordan ChatBot. anything else I can do for you!"
+
+        elif value == "What's your name" or value == "what's your name" or value == "what's your name?":
+            response = "I'm doing well. Thanks!"/N // "What about you"
+#>>>>>>> main
 
         elif value == "Abhishek" or value == "abhishek":
             response = "Tha Man The Myth. He is the Execptional one."
@@ -162,6 +173,33 @@ class JordanChatBot(MDApp):
 
         elif value == "Aman singh" or value == "aman singh" or value == "AMAN SINGH":
             response = "Choti bachi ho Kyaaa !!"
+#<<<<<<< Abhis-Jordan
+#=======
+
+        elif value == "Starex" or value == "starex" or value == "StarEx":
+            response = " Starex University is a private university located in the village Binola, Gurgaon district, Haryana, India. !!"
+
+        elif value == "What can you do!" or value == "kya kar sakte ho tum" or value == "kya karoge":
+            response = "Joh bhi tum bolo !!"
+
+        elif value == "Aman singh" or value == "aman singh" or value == "AMAN SINGH":
+            response = "Choti bachi ho Kyaaa !!"
+
+        elif value == "what is chatbot" or value == "chatbot kya hai" or value == "chatbot":
+            response = "An AI chatbot (Artificial Intelligence chatbot) is a chatbot that’s powered by artificial intelligence (AI). Unlike regular chatbots, AI chatbots are able to understand user queries through natural language processing (NLP) and can give intelligent answers to them. "
+
+        elif value == "JordanGame" or value == "jordan game" or value == "JORDAN GAME":
+            response = "welcome to Jordan game. You will going to on an Adventure !!"
+            # Are you ready for thisss!
+            # YES/NO
+            # if(value=="yes"){
+            #response = "Awesome! I knew it you are Alive as the Fish in my plate!"
+            # }
+            # else{
+            #     response = "so sad! We are missing an golden oppotunity to spend time with each other. "
+            #     response= "Next time though"
+            # }
+#>>>>>>> main
 
         elif value == "Nishikant" or value == "Nishikant" or value == "AMAN SINGH":
             response = "Assam Rifles !!"
@@ -179,7 +217,11 @@ class JordanChatBot(MDApp):
             screen_manager.get_screen('chats').chat_list.add_widget(
                 ResponseImage(source="1.png"))
         else:
+#<<<<<<< Abhis-Jordan
             response = "I'm a prototype like a baby! can you say it again?"
+#=======
+            response = "I'm a prototype. can you say it again?"
+#>>>>>>> main
         screen_manager.get_screen('chats').chat_list.add_widget(
             Response(text=response, size_hint_x=.75))
 
