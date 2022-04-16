@@ -40,6 +40,7 @@ class JordanChatBot(MDApp):
 
     def build(self):
         # self.theme_cls.theme_style = "Dark"
+        
         global screen_manager
         screen_manager = ScreenManager()
         screen_manager.add_widget(Builder.load_file("Main.kv"))
