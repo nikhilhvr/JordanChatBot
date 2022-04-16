@@ -104,10 +104,10 @@ class JordanChatBot(MDApp):
             response = " Here is your First - Would you rather! \n \n  Would you rather have the ability to see 10 minutes into the future or 150 years into the future? \n \n \t 1. For 10min type 'GG' \n \n For 150 type 'KK' "
 
         elif value == "GG" or value == "gg":
-            response = " Great one! \n \n Prototype in Construction further"
+            response = " Great one! \n \n Prototype in Construction further \n \n Type 'chat' again"
 
         elif value == "KK" or value == "kk":
-            response = " Great one! \n \n Prototype in Construction further"
+            response = " Great one! \n \n Prototype in Construction further \n \n Type 'chat' again"
 
         elif value == "No2" or value == "no2":
             response = "so sad! We are missing an golden oppotunity to spend time with each other.\n \t Next time though \n \t Type 'chat' "
@@ -157,7 +157,7 @@ class JordanChatBot(MDApp):
             response = "MOVIE LEAKER !"
 
         elif value == "Meenakshi" or value == "meenakshi" or value == "minakshi" or value == "MEENAKSHI":
-            response = "Your sacrifices isn't going to be unnoticed. \n You’re making a huge impact.  !"
+            response = "Your sacrifices isn't going to be unnoticed. \n You are making a huge impact.  !"
 
         elif value == "Akansha" or value == "akansha" or value == "AKANSHA":
             response = "Topper bhyii Tum rhe !! \n \t Hoshiyaar balak!"
@@ -189,7 +189,7 @@ class JordanChatBot(MDApp):
             response = "Choti bachi ho Kyaaa !!"
 
         elif value == "what is chatbot" or value == "chatbot kya hai" or value == "chatbot":
-            response = "An AI chatbot (Artificial Intelligence chatbot) is a chatbot that’s powered by artificial intelligence (AI). Unlike regular chatbots, AI chatbots are able to understand user queries through natural language processing (NLP) and can give intelligent answers to them. "
+            response = "An AI chatbot (Artificial Intelligence chatbot) is a chatbot that is powered by artificial intelligence (AI). Unlike regular chatbots, AI chatbots are able to understand user queries through natural language processing (NLP) and can give intelligent answers to them. "
 
         elif value == "JordanGame" or value == "jordan game" or value == "JORDAN GAME":
             response = "welcome to Jordan game. You will going to on an Adventure !!"
@@ -215,15 +215,17 @@ class JordanChatBot(MDApp):
 
         elif value == "Images":
             screen_manager.get_screen('chats').chat_list.add_widget(
-                ResponseImage(source="chatbots.jpg"))
+                ResponseImage(source="chatbots.png"))
         elif value == "Images1":
             screen_manager.get_screen('chats').chat_list.add_widget(
                 ResponseImage(source="1.png"))
         else:
-            # <<<<<<< Abhis-Jordan
             response = "I'm a prototype like a baby! can you say it again?"
+
+           # <<<<<<< Abhis-Jordan
+            # response = "I'm a prototype like a baby ! can you say it again?"
 # =======
-            response = "I'm a prototype. can you say it again?"
+            # response = "I'm a prototype. can you say it again?"
 # >>>>>>> main
         screen_manager.get_screen('chats').chat_list.add_widget(
             Response(text=response, size_hint_x=.75))
@@ -258,7 +260,7 @@ class JordanChatBot(MDApp):
 
 if __name__ == '__main__':
     LabelBase.register(
-        name="Poppins", fn_regular="E:\Programming\JordanChatBot\Poppins\Poppins-ExtraBold.ttf")
+        name="Poppins", fn_regular="E:\Programming\JordanChatBot\Poppins\Poppins-BoldItalic.ttf")
     LabelBase.register(
-        name="BPoppins", fn_regular="E:\Programming\JordanChatBot\Poppins\Poppins-ExtraBold.ttf")
+        name="BPoppins", fn_regular="E:\Programming\JordanChatBot\Poppins\Poppins-BoldItalic.ttf")
     JordanChatBot().run()
