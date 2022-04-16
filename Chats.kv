@@ -79,8 +79,22 @@ MDScreen:
                 font_size: "25sp"
                 theme_text_color: "Custom"
                 text_color: 245/255, 245/255, 245/255, 1
+        MDFloatLayout:
+            md_bg_color: 245/255, 245/255, 245/255, 1
+            size_hint_y: .11
+            pos_hint: {"center_y": .95}
             MDLabel:
-                text:"Jordan ChatBot"
+                id: bot_name
+                text: ""
+                pos_hint: {"center_y": 1}
+                halign: "center"
+                font_name: "BPoppins"
+                font_size: "15sp"
+                theme_text_color: "Custom"
+                text_color: 245/255, 245/255, 245/255, 1     
+
+            MDLabel:
+                text:"Start with Hey/Hello"
                 halign: "center"
                 font_name: "BPoppins"
                 pos_hint:{"center_y": .5}
