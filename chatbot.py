@@ -177,9 +177,9 @@ class JordanChatBot(MDApp):
                 ResponseImage(source="1.png"))
         else:
 #<<<<<<< Abhis-Jordan
-            response = "I'm a prototype like a baby! can you say it again?"
+            response = "I'm a prototype like a baby ! can you say it again?"
 #=======
-            response = "I'm a prototype. can you say it again?"
+            # response = "I'm a prototype. can you say it again?"
 #>>>>>>> main
         screen_manager.get_screen('chats').chat_list.add_widget(
             Response(text=response, size_hint_x=.75))
@@ -214,7 +214,7 @@ class JordanChatBot(MDApp):
 
 if __name__ == '__main__':
     LabelBase.register(
-        name="Poppins", fn_regular="E:\Programming\JordanChatBot\Poppins\Poppins-ExtraBold.ttf")
+        name="Poppins", fn_regular="D:\Kivy\Chat Bot\poppins\Poppins-SemiBold.ttf")
     LabelBase.register(
-        name="BPoppins", fn_regular="E:\Programming\JordanChatBot\Poppins\Poppins-ExtraBold.ttf")
+        name="BPoppins", fn_regular="D:\Kivy\Chat Bot\poppins\Poppins-SemiBold.ttf")
     JordanChatBot().run()
