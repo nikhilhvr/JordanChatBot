@@ -92,6 +92,33 @@ class JordanChatBot(MDApp):
         elif value == "Aman singh" or value == "aman singh" or value == "AMAN SINGH":
             response = "Choti bachi ho Kyaaa !!"
 
+        elif value == "Aman singh" or value == "aman singh" or value == "AMAN SINGH":
+            response = "Choti bachi ho Kyaaa !!"
+
+        elif value == "Starex" or value == "starex" or value == "StarEx":
+            response = " Starex University is a private university located in the village Binola, Gurgaon district, Haryana, India. !!"
+
+        elif value == "What can you do!" or value == "kya kar sakte ho tum" or value == "kya karoge":
+            response = "Joh bhi tum bolo !!"
+
+        elif value == "Aman singh" or value == "aman singh" or value == "AMAN SINGH":
+            response = "Choti bachi ho Kyaaa !!"
+
+        elif value == "what is chatbot" or value == "chatbot kya hai" or value == "chatbot":
+            response = "An AI chatbot (Artificial Intelligence chatbot) is a chatbot that’s powered by artificial intelligence (AI). Unlike regular chatbots, AI chatbots are able to understand user queries through natural language processing (NLP) and can give intelligent answers to them. "
+
+        elif value == "JordanGame" or value == "jordan game" or value == "JORDAN GAME":
+            response = "welcome to Jordan game. You will going to on an Adventure !!"
+            # Are you ready for thisss!
+            # YES/NO
+            # if(value=="yes"){
+            #response = "Awesome! I knew it you are Alive as the Fish in my plate!"
+            # }
+            # else{
+            #     response = "so sad! We are missing an golden oppotunity to spend time with each other. "
+            #     response= "Next time though"
+            # }
+
         elif value == "Images":
             screen_manager.get_screen('chats').chat_list.add_widget(
                 ResponseImage(source="chatbots.jpg"))
