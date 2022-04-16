@@ -19,7 +19,7 @@
     padding: 12, 10
     canvas.before:
         Color:
-            rgb: (1, 1, 1, 1)
+            rgb: (0/255,191/255,176/255,1)
         RoundedRectangle:
             size: self.width, self.height
             pos: self.pos
@@ -37,6 +37,7 @@
             size: self.width, self.height
             pos: self.pos
             radius: [23, 23, 23, 0]
+
 
 # MDScreen2:
 #     # bot_name: bot_name
@@ -125,14 +126,14 @@ MDScreen:
                 cols: 1
                 spacing: 5
         MDFloatLayout:
-            md_bg_color: 245/255, 245/255, 245/255, 1
+            md_bg_color: 245/255, 245/255, 245/255, 1 #Bottom bar
             size_hint_y: .11
             MDFloatLayout:
                 size_hint: .8, .75
                 pos_hint: {"center_x": .43, "center_y": .5}
                 canvas:
                     Color:
-                        rgb: (238/255, 238/255, 238/255, 1)
+                        rgb: (238/255, 238/255, 238/255, 1) #Bottom bar inside
                     RoundedRectangle:
                         size: self.size
                         pos: self.pos
@@ -145,7 +146,7 @@ MDScreen:
                     font_size: "18sp"
                     height: self.minimum_height
                     multiline: False
-                    cursor_color: 1, 170/255, 23/255, 1
+                    cursor_color: 0/255,123/255,184/255,1 #cursor_color
                     cursor_width: "2sp"
                     foreground_color: 1, 170/255, 23/255, 1
                     background_color: 0,0,0,0
@@ -157,7 +158,7 @@ MDScreen:
                 user_font_size: "18sp"
                 theme_text_color: "Custom"
                 text_color: 1, 1, 1, 1
-                md_bg_color: 1, 170/255, 23/255, 1
+                md_bg_color: 0/255,123/255,184/255,1 #arrow bar
                 on_release: app.send()
 
 
