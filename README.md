@@ -7,4 +7,21 @@ A Chatbot is an Artificial Intelligence-based software developed to interact wit
 <img src="https://github.com/nikhilhvr/JordanChatBot/blob/main/chat.PNG" width=30% height=30% >
 
 # Requirements
-Basically this project based on three things:-
+### Basically this project based on three things:-
+* [Python3](#Python3)
+* [Kivy](#Python3)
+* [KivyMd](#Python3)
+
+## You can install these things by using these simple commands in given below:-
+#### Python
+``` shell
+https://www.python.org/downloads/release/python-3104/
+```
+#### Kivy
+``` shell
+pip install kivy
+```
+#### Kivymd
+``` shell
+pip install kivymd
+```
