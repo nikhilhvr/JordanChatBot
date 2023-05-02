@@ -37,7 +37,6 @@ class JordanChatBot(MDApp):
     def change_screen(self, name):
         screen_manager.current = name
 
-
     def build(self):
         # self.theme_cls.theme_style = "Dark"
         
@@ -56,9 +55,9 @@ class JordanChatBot(MDApp):
     def response(self, *args):
         if value == "Hello" or value == "hello" or value == "hey" or value == "Hey":
             # {screen_manager.get_screen('chats').bot_name.text}
-            response = f"Hello {screen_manager.get_screen('chats').bot_name.text} Wassssup!. \n  Type 'chat' for few features"
+            response = f"Hello {screen_manager.get_screen('chats').bot_name.text} Wassssup!. \n \n \tType 'chat' for few features"
 
-#<<<<<<< Abhis-Jordan
+# <<<<<<< Abhis-Jordan
         # Jordan ChatBot Interaction
         elif value == "How are you?" or value == "how are you?":
             response = "I'm doing well. Thanks! What about you"
@@ -67,7 +66,7 @@ class JordanChatBot(MDApp):
         #     response = " We don't play Number game here buddy!"
 
         elif value == "chat" or value == "Chat":
-            response = "As a prototype I have very little to give you unlike Our facebook \n \t 1.tye 'Jordan Game' \n \t 2. ask me about your or my name or your univercity \n \t 3. type 'Starex49' for a fun interaction"
+            response = "As a prototype I have very little to give you unlike Our facebook \n \n  1. Type 'Jordan Game' \n  2. Type 'Starex49' for a fun interaction  \n  3. Ask me about your or my name or your univercity "
 
         elif value == "my name" or value == "My name" or value == "what is my name":
             response = f"Your name is {screen_manager.get_screen('chats').bot_name.text} \t Am I correct?? "
@@ -79,7 +78,7 @@ class JordanChatBot(MDApp):
             response = "I'm doing well. Thanks! What about you"
 
         elif value == "Starex" or value == "starex" or value == "StarEx":
-            response = " Starex University is a private university located in the village Binola, Gurgaon district, Haryana, India. !!"
+            response = " Starex University is a private university located in the village Binola, Gurgaon district, Haryana, India. !! \n \n If you are looking for other thing you should add '49' after 'starex'"
 
         elif value == "What can you do!" or value == "kya kar sakte ho tum" or value == "kya karoge":
             response = "Joh bhi tum bolo !!"
@@ -94,22 +93,22 @@ class JordanChatBot(MDApp):
 
         # Jordan Game start here -->
         elif value == "Jordan game" or value == "jordan game" or value == "JORDAN GAME":
-            response = "welcome to Jordan game. You will going to on an Adventure !! \n \t Are you ready for thisss! \n \t YES/NO"
+            response = "welcome to Jordan game. You will going to on an Adventure !! \n \n \t Are you ready for thisss! \n \t YES/NO"
 
         elif value == "Yes" or value == "yes" or value == "YES":
-            response = "Awesome! I knew it you are Alive as the Fish in my plate! \n \t I have a game WOULD YOU RATHER \n \t Wantt to play \n \t yes1/no2"
+            response = "Awesome! I knew it you are Alive as the Fish in my plate! \n \n  I have a game WOULD YOU RATHER \n \n Wantt to play \n \t yes1/no2"
 
         elif value == "No" or value == "no" or value == "NO":
             response = "so sad! We are missing an golden oppotunity to spend time with each other.\n \t Next time though "
 
         elif value == "yes1" or value == "Yes1":
-            response = " Here is your First - Would you rather! \n \t Would you rather have the ability to see 10 minutes into the future or 150 years into the future? \n \t \t 1. For 10min GG \n \t For 150 KK "
+            response = " Here is your First - Would you rather! \n \n  Would you rather have the ability to see 10 minutes into the future or 150 years into the future? \n \n \t 1. For 10min type 'GG' \n \n For 150 type 'KK' "
 
         elif value == "GG" or value == "gg":
-            response = " Great one!"
+            response = " Great one! \n \n Prototype in Construction further \n \n Type 'chat' again"
 
         elif value == "KK" or value == "kk":
-            response = " Great one!"
+            response = " Great one! \n \n Prototype in Construction further \n \n Type 'chat' again"
 
         elif value == "No2" or value == "no2":
             response = "so sad! We are missing an golden oppotunity to spend time with each other.\n \t Next time though \n \t Type 'chat' "
@@ -125,8 +124,8 @@ class JordanChatBot(MDApp):
 
         # Starex CSE Projects ahead
         elif value == "Starex49" or value == "starex49" or value == "StarEx49":
-            response = "I have a Compliment for Youu! \n \t Type your name and I will give you my honest opinion"
-#=======
+            response = "I have a Compliment for You! \n \n \t Type your name and I will give you my honest opinion"
+# =======
         elif value == "How are you?" or value == "how are you?":
             response = "I'm doing well. Thanks!"/N // "What about you"
 
@@ -135,7 +134,7 @@ class JordanChatBot(MDApp):
 
         elif value == "What's your name" or value == "what's your name" or value == "what's your name?":
             response = "I'm doing well. Thanks!"/N // "What about you"
-#>>>>>>> main
+# >>>>>>> main
 
         elif value == "Abhishek" or value == "abhishek":
             response = "Tha Man The Myth. He is the Execptional one."
@@ -147,7 +146,7 @@ class JordanChatBot(MDApp):
         #     response = "Tha Man The Myth"
 
         elif value == "Kapil" or value == "kapil" or value == "KAPIL":
-            response = "People’s Dreams... Have No Ends \n \t And Only I Can Call My Dream Stupid!"
+            response = "Oh My, You big Stud "
 
         elif value == "purushottam" or value == "Purushottam":
             response = "Bhaiii Book chahiye !!"
@@ -158,8 +157,11 @@ class JordanChatBot(MDApp):
         elif value == "amish" or value == "Amish" or value == "AMISH":
             response = "MOVIE LEAKER !"
 
+        elif value == "Meenakshi" or value == "meenakshi" or value == "minakshi" or value == "MEENAKSHI":
+            response = "Your sacrifices isn't going to be unnoticed. \n You are making a huge impact.  !"
+
         elif value == "Akansha" or value == "akansha" or value == "AKANSHA":
-            response = "Topper bhyii tum rhe !! \n \t Hoshiyaar balak!"
+            response = "Topper bhyii Tum rhe !! \n \t Hoshiyaar balak!"
 
         elif value == "Mardav" or value == "mardav":
             response = "Haaaan Vaiiii Savage !!"
@@ -175,8 +177,8 @@ class JordanChatBot(MDApp):
 
         elif value == "Aman singh" or value == "aman singh" or value == "AMAN SINGH":
             response = "Choti bachi ho Kyaaa !!"
-#<<<<<<< Abhis-Jordan
-#=======
+# <<<<<<< Abhis-Jordan
+# =======
 
         elif value == "Starex" or value == "starex" or value == "StarEx":
             response = " Starex University is a private university located in the village Binola, Gurgaon district, Haryana, India. !!"
@@ -188,7 +190,7 @@ class JordanChatBot(MDApp):
             response = "Choti bachi ho Kyaaa !!"
 
         elif value == "what is chatbot" or value == "chatbot kya hai" or value == "chatbot":
-            response = "An AI chatbot (Artificial Intelligence chatbot) is a chatbot that’s powered by artificial intelligence (AI). Unlike regular chatbots, AI chatbots are able to understand user queries through natural language processing (NLP) and can give intelligent answers to them. "
+            response = "An AI chatbot (Artificial Intelligence chatbot) is a chatbot that is powered by artificial intelligence (AI). Unlike regular chatbots, AI chatbots are able to understand user queries through natural language processing (NLP) and can give intelligent answers to them. "
 
         elif value == "JordanGame" or value == "jordan game" or value == "JORDAN GAME":
             response = "welcome to Jordan game. You will going to on an Adventure !!"
@@ -201,7 +203,7 @@ class JordanChatBot(MDApp):
             #     response = "so sad! We are missing an golden oppotunity to spend time with each other. "
             #     response= "Next time though"
             # }
-#>>>>>>> main
+# >>>>>>> main
 
         elif value == "Nishikant" or value == "Nishikant" or value == "AMAN SINGH":
             response = "Assam Rifles !!"
@@ -214,16 +216,18 @@ class JordanChatBot(MDApp):
 
         elif value == "Images":
             screen_manager.get_screen('chats').chat_list.add_widget(
-                ResponseImage(source="chatbots.jpg"))
+                ResponseImage(source="chatbots.png"))
         elif value == "Images1":
             screen_manager.get_screen('chats').chat_list.add_widget(
                 ResponseImage(source="1.png"))
         else:
-#<<<<<<< Abhis-Jordan
-            response = "I'm a prototype like a baby ! can you say it again?"
-#=======
+            response = "I'm a prototype like a baby! can you say it again?"
+
+           # <<<<<<< Abhis-Jordan
+            # response = "I'm a prototype like a baby ! can you say it again?"
+# =======
             # response = "I'm a prototype. can you say it again?"
-#>>>>>>> main
+# >>>>>>> main
         screen_manager.get_screen('chats').chat_list.add_widget(
             Response(text=response, size_hint_x=.75))
 
@@ -257,7 +261,7 @@ class JordanChatBot(MDApp):
 
 if __name__ == '__main__':
     LabelBase.register(
-        name="Poppins", fn_regular="D:\Kivy\Chat Bot\poppins\Poppins-SemiBold.ttf")
+        name="Poppins", fn_regular="E:\Programming\JordanChatBot\Poppins\Poppins-BoldItalic.ttf")
     LabelBase.register(
-        name="BPoppins", fn_regular="D:\Kivy\Chat Bot\poppins\Poppins-SemiBold.ttf")
+        name="BPoppins", fn_regular="E:\Programming\JordanChatBot\Poppins\Poppins-BoldItalic.ttf")
     JordanChatBot().run()
